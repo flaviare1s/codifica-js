@@ -15,7 +15,11 @@ switch(operador) {
     console.log(num1 * num2)
     break
   case '/':
-    console.log(num1 / num2)
+    if (num2 === 0) {
+      console.log("Erro: divisão por zero não é permitida");
+    } else {
+      console.log(num1 / num2);
+    }
     break
   default:
     console.log('Operador inválido')
