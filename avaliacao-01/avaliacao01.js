@@ -44,6 +44,7 @@ console.log("A - Cadastro")
 console.log("B - Login")
 console.log("C - Alterar Senha")
 let opcao = prompt("Escolha uma opção: ")
+opcao = opcao.toUpperCase()
 
 switch (opcao) {
   case "A":
@@ -77,7 +78,6 @@ if (IMC < 18.5) {
   console.log(`Seu IMC é ${IMC} e você está com obesidade.`)
 }
 
-
 // 6. Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos
 // formam realmente um triângulo. Caso forme, deve ser indicado o tipo de triângulo:
 // Isósceles, escaleno ou eqüilátero.
@@ -85,6 +85,21 @@ if (IMC < 18.5) {
 // Triângulo isósceles: possui dois lados iguais (A=B ou A=C ou B = C)
 // Triângulo escaleno: possui todos os lados diferentes (A<>B e B <> C)
 // Triângulo eqüilátero: possui todos os lados iguais (A=B e B=C)
+let ladoA = Number(prompt("Digite o valor do lado A: "))
+let ladoB = Number(prompt("Digite o valor do lado B: "))
+let ladoC = Number(prompt("Digite o valor do lado C: "))
+
+if (ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB) {
+  if (ladoA === ladoB && ladoB === ladoC) {
+    console.log("É um triângulo equilátero.")
+  } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+    console.log("É um triângulo isósceles.")
+  } else {
+    console.log("É um triângulo escaleno.")
+  }
+} else {
+  console.log("Os valores fornecidos não formam um triângulo.")
+}
 
 // 7. As maçãs custam R$ 0,30 se forem compradas menos do que uma dúzia, e R$ 0,25 se
 // forem compradas pelo menos doze. Escreva um algoritmo que leia o número de maçãs
