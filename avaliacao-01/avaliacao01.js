@@ -1,19 +1,19 @@
-const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")()
 // 1. Escreva um programa que recebe um número inteiro e verifica se ele é par ou ímpar
 // utilizando uma estrutura de controle if.
-const int = Number(prompt("Digite um número inteiro: "));
+const int = Number(prompt("Digite um número inteiro: "))
 if (int === 0) {
-  console.log(`${int} é ZERO!`);
+  console.log(`${int} é ZERO!`)
 } else if (int % 2 === 0) {
-  console.log(`${int} é PAR!`);
+  console.log(`${int} é PAR!`)
 } else {
-  console.log(`${int} é ÍMPAR!`);
+  console.log(`${int} é ÍMPAR!`)
 }
 
 // 2. Crie um programa que classifica a idade de uma pessoa em categorias (criança,
 // adolescente, adulto, idoso) com base no valor fornecido, utilizando uma estrutura de
 // controle if-else.
-let idade = Number(prompt("Qual a sua idade? "));
+let idade = Number(prompt("Qual a sua idade? "))
 
 if (idade < 12) {
   console.log("Criança")
@@ -27,22 +27,56 @@ if (idade < 12) {
 
 // 3. Implemente um programa que recebe uma nota de 0 a 10 e classifica como
 // "Aprovado", "Recuperação", ou "Reprovado" utilizando if-else if.
-let nota= Number(prompt("Qual a sua nota? "));
+let nota= Number(prompt("Qual a sua nota? "))
 
 if (nota < 5) {
-  console.log("REPROVADO");
+  console.log("REPROVADO")
 } else if (nota >= 5 && nota < 7) {
-  console.log("RECUPERAÇÃO");
+  console.log("RECUPERAÇÃO")
 } else {
   console.log("APROVADO")
 }
 
 // 4. Crie um menu interativo no console que oferece ao usuário a escolha de três opções.
 // Utilize switch-case para implementar a lógica de cada opção selecionada.
+console.log("Menu:")
+console.log("A - Cadastro")
+console.log("B - Login")
+console.log("C - Alterar Senha")
+let opcao = prompt("Escolha uma opção: ")
+
+switch (opcao) {
+  case "A":
+    console.log("Você escolheu a opção de cadastro")
+    break;
+  case "B":
+    console.log("Você escolheu a opção de login")
+    break;
+  case "C":
+    console.log("Você escolheu a opção de alterar senha")
+    break;
+  default:
+    console.log("Escolha uma opção válida")
+    break;
+}
 
 // 5. Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma pessoa e
 // determina a categoria de peso (baixo peso, peso normal, sobrepeso, obesidade)
 // utilizando if-else.
+let peso = Number(prompt("Digite o seu peso: "))
+let altura = Number(prompt("Digite a sua altura (em cm): "))
+let IMC = (peso / altura ** 2).toFixed(2)
+
+if (IMC < 18.5) {
+  console.log(`Seu IMC é ${IMC} e você está com baixo peso.`)
+} else if (IMC >= 18.5 && IMC < 25) {
+  console.log(`Seu IMC é ${IMC} e você está com o peso normal.`)
+} else if (IMC >= 25 && IMC < 30) {
+  console.log(`Seu IMC é ${IMC} e você está com sobrepeso.`)
+} else {
+  console.log(`Seu IMC é ${IMC} e você está com obesidade.`)
+}
+
 
 // 6. Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos
 // formam realmente um triângulo. Caso forme, deve ser indicado o tipo de triângulo:
