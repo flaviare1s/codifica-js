@@ -145,12 +145,59 @@ for (let i = 0; i < 5; i++) {
 console.log(soma)
 
 // 12. Crie um programa que exibe a tabuada de um número fornecido pelo usuário (de 1 a 10) utilizando um loop for.
+let tabuada = Number(prompt("Qual número você quer saber a tabuada? "))
+for (let i = 0; i <= 10; i++) {
+  console.log(`${tabuada} x ${i} = ${tabuada * i}`)
+}
 
 // 13. Fazer um algoritmo para receber números decimais até que o usuário digite 0 e fazer
 // a média aritmética desses números.
 
+let total = 0
+let quantidade = 0
+let numero
+
+do {
+  numero = Number(prompt("Digite um número decimal (0 para sair): "))
+
+  if (numero !== 0) {
+    total += numero
+    quantidade++
+  }
+} while (numero !== 0)
+
+if (quantidade > 0) {
+  let media = total / quantidade;
+  console.log(
+    `A média aritmética dos números digitados é: ${media.toFixed(2)}`
+  );
+} else {
+  console.log("Nenhum número foi digitado.")
+}
+
 // 14. Crie um programa que calcula o fatorial de um número fornecido pelo usuário
 // utilizando um loop for ou while.
+const A = Number(prompt("Digite um número: "))
+let fatorial = 1
+
+for (let i = A; i > 1; i--) {
+  fatorial *= i
+}
+
+console.log(`${A}! = ${fatorial}`)
 
 // 15. Escreva um programa que gera e imprime os primeiros 10 números da sequência de
 // Fibonacci utilizando um loop for.
+let a = 0
+let b = 1
+
+console.log("Sequência de Fibonacci:")
+console.log(a)
+console.log(b)
+
+for (let i = 2; i < 10; i++) {
+  let proximo = a + b
+  console.log(proximo)
+  a = b
+  b = proximo
+}

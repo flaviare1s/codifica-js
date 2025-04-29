@@ -13,3 +13,9 @@ Este repositório contém os exercícios, desafios e anotações do curso de des
 
 3. Instale as dependências
   - npm install
+
+4. Para rodar os exercícios com mais facilidade:
+
+- Instale a extensão Code Runner no VS Code.
+- Abra o arquivo desejado.
+- Pressione o botão PLAY no canto superior direito do editor.
