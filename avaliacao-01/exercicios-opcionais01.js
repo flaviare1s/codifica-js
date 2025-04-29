@@ -3,6 +3,13 @@ const prompt = require('prompt-sync')();
 // Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou.
 // Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de
 // vida um fumante perderá e exiba o total em dias.
+const cigarrosDia = Number(prompt('Quantos cigarros voce fuma por dia? '))
+const anosFumando = Number(prompt('Quantos anos voce fuma? '))
+const totalCigarros = cigarrosDia * anosFumando * 365
+const minutosPerdidos = totalCigarros * 10
+const diasPerdidos = (minutosPerdidos / 1440).toFixed(2);
+
+console.log(`Você perdeu aproximadamente ${diasPerdidos} dias de vida.`)
 
 // 2. Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80 Km/h,
 // exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da
