@@ -1,1 +1,15 @@
-# codifica-js
+# Dev. Full Stack Jr. (+praTi & Codifica)
+
+### Repositório para as aulas de JavaScript do curso de Full Stack Jr. — parceria entre +praTi e Codifica.
+
+Este repositório contém os exercícios, desafios e anotações do curso de desenvolvimento Full Stack Júnior.
+
+## Como rodar os exercícios localmente
+
+1. Clone o repositório:
+  - git clone https://github.com/flaviare1s/codifica-js.git
+
+2. Acesse a pasta do projeto:
+
+3. Instale as dependências
+  - npm install

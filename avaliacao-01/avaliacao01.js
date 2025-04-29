@@ -104,17 +104,45 @@ if (ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB) {
 // 7. As maçãs custam R$ 0,30 se forem compradas menos do que uma dúzia, e R$ 0,25 se
 // forem compradas pelo menos doze. Escreva um algoritmo que leia o número de maçãs
 // compradas, calcule e escreva o valor total da compra.
+const numeroMacas = Number(prompt("Quantas maçãs foram compradas? "))
+
+if (numeroMacas < 12) {
+  console.log(`O valor total da compra é R$ ${numeroMacas * 0.3}`)
+} else {
+  console.log(`O valor total da compra é R$ ${numeroMacas * 0.25}`)
+}
 
 // 8. Escreva um algoritmo para ler 2 valores (considere que não serão lidos valores iguais)
 // e escreve-los em ordem crescente.
+let num1 = Number(prompt("Digite o primeiro número: "))
+let num2 = Number(prompt("Digite o segundo número: "))
+
+if (num1 > num2) {
+  console.log(num2, num1)
+} else {
+  console.log(num1, num2)
+}
 
 // 9. Implemente um programa que exibe uma contagem regressiva de 10 até 1 no console
 // utilizando um loop for.
+for (let i = 10; i > 0; i--) {
+  console.log(i)
+}
 
 // 10. Escreva um algoritmo para ler um número inteiro e escrevê-lo na tela 10 vezes.
+let num = Number(prompt("Digite um número: "))
+for (let i = 0; i < 10; i++) {
+  console.log(num)
+}
 
 // 11. Escreva um programa que solicita ao usuário 5 números e calcula a soma total
 // utilizando um loop for.
+let soma = 0
+for (let i = 0; i < 5; i++) {
+  let num = Number(prompt("Digite um número: "))
+  soma += num
+}
+console.log(soma)
 
 // 12. Crie um programa que exibe a tabuada de um número fornecido pelo usuário (de 1 a 10) utilizando um loop for.
 
