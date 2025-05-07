@@ -16,21 +16,29 @@ const prompt = require('prompt-sync')();
 // ? exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da
 // ? multa, cobrando R$ 5,00 por cada Km acima da velocidade permitida.
 
-const velocidadeMaxima = 80
-const velocidade = Number(prompt('Informe a velocidade: '))
-let excessoVelocidade = velocidade - velocidadeMaxima
-let multa = 0
+// const velocidadeMaxima = 80
+// const velocidade = Number(prompt('Informe a velocidade: '))
+// let excessoVelocidade = velocidade - velocidadeMaxima
+// let multa = 0
 
-if(velocidade > velocidadeMaxima) {
-  let multa = excessoVelocidade * 5
-  console.log(`Você excedeu a velocidade em ${excessoVelocidade}km e foi multado em $${multa},00 reais!`)
-} else {
-  console.log('Velocidade dentro do limite permitido!')
-}
+// if(velocidade > velocidadeMaxima) {
+//   let multa = excessoVelocidade * 5
+//   console.log(`Você excedeu a velocidade em ${excessoVelocidade}km e foi multado em $${multa},00 reais!`)
+// } else {
+//   console.log('Velocidade dentro do limite permitido!')
+// }
 
 // ? 3. Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em
 // ? Km. Calcule o preço da passagem, cobrando R$ 0.50 por Km para viagens até 200 Km e
 // ? R$ 0.45 para viagens mais longas.
+
+// const distancia = Number(prompt('Informe a distância a ser percorrida (em km): '))
+
+// if(distancia <= 200) {
+//   console.log(`A passagem custa ${distancia * 0.5}`)
+// } else {
+//   console.log(`A passagem custa ${distancia * 0.45}`);
+// }
 
 // ? 4. Crie um programa que leia o tamanho de três segmentos de reta. Analise seus
 // ? comprimentos e diga se é possível formar um triângulo com essas retas.
