@@ -45,7 +45,34 @@ const prompt = require('prompt-sync')();
 // ? Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada
 // ? lado deve ser menor que a soma dos outros dois.
 
+// const ladoA = Number(prompt('Digite o valor do lado A: '))
+// const ladoB = Number(prompt('Digite o valor do lado B: '))
+// const ladoC = Number(prompt('Digite o valor do lado C: '))
+
+// if(ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB) {
+//   console.log('É possível formar um triângulo com esses valores!')
+// } else {
+//   console.log("Não é possível formar um triângulo com esses valores!");
+// }
+
 // ? 5. Crie um jogo de JoKenPo (Pedra-Papel-Tesoura).
+
+// const opcoes = ['pedra', 'papel', 'tesoura']
+// const jogadaUsuario = prompt('Escolha: pedra, papel ou tesoura? ').toLowerCase()
+// const sorteio = Math.floor(Math.random() * opcoes.length)
+// const jogadaPC = opcoes[sorteio]
+
+// if (jogadaUsuario === jogadaPC) {
+//   console.log('Empate!')
+// } else if (
+//   (jogadaUsuario === 'pedra' && jogadaPC === 'tesoura') ||
+//   (jogadaUsuario === 'tesoura' && jogadaPC === 'papel') ||
+//   (jogadaUsuario === 'papel' && jogadaPC === 'pedra')
+// ) {
+//   console.log('Você venceu!')
+// } else {
+//   console.log("Você perdeu!")
+// }
 
 // ? 6. Crie um jogo onde o computador vai sortear um número entre 1 e 5. O jogador vai
 // ? tentar descobrir qual foi o valor sorteado.
