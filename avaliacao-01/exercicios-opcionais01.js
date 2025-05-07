@@ -77,6 +77,15 @@ const prompt = require('prompt-sync')();
 // ? 6. Crie um jogo onde o computador vai sortear um número entre 1 e 5. O jogador vai
 // ? tentar descobrir qual foi o valor sorteado.
 
+// const numeroSorteado = Math.floor(Math.random() * 5) + 1
+// const numeroJogador = Number(prompt('Escolha um número de 1 a 5: '))
+
+// if(numeroSorteado === numeroJogador) {
+//   console.log(`Número sorteado: ${numeroSorteado}. Parabéns, você venceu!`)
+// } else {
+//   console.log(`Número sorteado: ${numeroSorteado}. Não foi dessa vez!`)
+// }
+
 // ? 7. Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O aluguel de um
 // ? carro popular custa R$ 90,00 por dia e um carro de luxo custa R$ 150,00. Além disso, o
 // ? cliente paga por Km percorrido. Faça um programa que leia o tipo de carro alugado
