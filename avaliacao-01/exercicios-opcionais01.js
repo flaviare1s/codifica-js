@@ -98,6 +98,31 @@ const prompt = require('prompt-sync')();
 // ? - Até 200 Km percorridos: R$ 0,30 por Km
 // ? - Acima de 200 Km percorridos: R$ 0,25 por Km
 
+// const tipoCarro = prompt('Informe o tipo de carro ("popular" ou "luxo"): ').toLowerCase()
+// const diasAluguel = Number(prompt('Informe a quantidade de dias: '))
+// const kmPercorridos = Number(prompt("Informe a quantidade de km percorridos: "));
+// let preco = 0
+
+// if(tipoCarro === 'popular') {
+//   if(kmPercorridos <= 100) {
+//     preco = (90 * diasAluguel) + (kmPercorridos * 0.2)
+//   } else {
+//     preco = 90 * diasAluguel + kmPercorridos * 0.1;;
+//   }
+// } else if(tipoCarro === 'luxo') {
+//   if (kmPercorridos <= 200) {
+//     preco = 150 * diasAluguel + kmPercorridos * 0.3;;
+//   } else {
+//     preco = 150 * diasAluguel + kmPercorridos * 0.25;;
+//   }
+// } else {
+//   console.log('Informe um tipo de carro válido!')
+// }
+
+// if (preco > 0) {
+//   console.log(`Preço final: R$ ${preco.toFixed(2)}`);
+// }
+
 // ? 8. Um programa de vida saudável quer dar pontos por atividades físicas realizadas que
 // ? podem ser trocados por dinheiro. Cada hora de atividade física no mês vale pontos. O
 // ? sistema funciona assim:
