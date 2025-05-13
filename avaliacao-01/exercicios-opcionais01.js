@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 // ? 1. Escreva um programa para calcular a redução do tempo de vida de um fumante.
 // ? Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou.
 // ? Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de
@@ -132,6 +132,23 @@ const prompt = require('prompt-sync')();
 // ? - A cada ponto ganho, o cliente fatura R$ 0,05 (5 centavos)
 // ? Faça um programa que leia quantas horas de atividade uma pessoa teve por mês.
 // ? Calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar.
+
+// const horasDeAtividade = Number(prompt("Informe quantas horas de atividade física você praticou nesse mês: "))
+// const calcularPagamento = (horasDeAtividade) => {
+//   let pontos = 0
+//   if (horasDeAtividade < 10) {
+//     pontos = horasDeAtividade * 2
+//   } else if (horasDeAtividade >= 10 && horasDeAtividade < 20) {
+//     pontos = horasDeAtividade * 5
+//   } else {
+//     pontos = horasDeAtividade * 10
+//   }
+//   console.log(`Você atingiu ${pontos} pontos e ganhou R$${(pontos * 0.05).toFixed(2)} reais!`)
+
+//   return pontos
+// }
+
+// calcularPagamento(horasDeAtividade)
 
 // ? 9. Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários. No final,
 // ? mostre o total de salário pago aos homens e o total pago às mulheres. O programa vai
