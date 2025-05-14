@@ -3,8 +3,39 @@ const prompt = require("prompt-sync")();
 // ? Aritmética), mostrando na tela os 10 primeiros elementos da PA e a soma entre todos os
 // ? valores da sequência.
 
+// function pa(primeiroTermo, razao) {
+//   let soma = 0;
+//   for (let i = 0; i < 10; i++) {
+//     let termo = primeiroTermo + i * razao;
+//     console.log(termo);
+//     soma += termo;
+//   }
+
+//   console.log(`A soma dos termos é ${soma}.`);
+// }
+
+// pa(1, 3);
+
 // ? 12. Faça um programa que mostre os 10 primeiros elementos da Sequência de Fibonacci.
 // ? Ex.: 1, 1, 2, 3, 5, 8, 13, 21.
+
+// function fibonacci() {
+//   let a = 0
+//   let b = 1
+//   let temp
+
+//   console.log(a)
+//   console.log(b)
+
+//   for(let i = 3; i <= 10; i++) {
+//     temp = a + b
+//     console.log(temp)
+//     a = b
+//     b = temp
+//   }
+// }
+
+// fibonacci()
 
 // ? 13. Crie um programa que preencha automaticamente (usando lógica, não apenas
 // ? atribuindo diretamente) um vetor numérico com 15 posições com os primeiros elementos
