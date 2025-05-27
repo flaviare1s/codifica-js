@@ -168,9 +168,52 @@ const prompt = require("prompt-sync")()
 // ? Em vendas = [{ cliente, total }, ...], use reduce para gerar um objeto onde
 // ? cada chave é um cliente e o valor é a soma de todos os seus total.
 
+// const vendas = [
+//   { cliente: "Clara", total: 100 },
+//   { cliente: "João", total: 150 },
+//   { cliente: "Clara", total: 50 },
+//   { cliente: "Carlos", total: 200 },
+//   { cliente: "Clara", total: 150 },
+// ];
+
+// const total = vendas.reduce((acc, item) => {
+//   const cliente = item.cliente
+//   if(!acc[cliente]) {
+//     acc[cliente] = item.total
+//   } else {
+//     acc[cliente] += item.total
+//   }
+//   return acc
+// }, {})
+
+// console.log(total)
+
 // ? 9. Conversão Entre Formatos
 // ? Escreva duas funções:
 // ? ○ paresParaObjeto(pares) recebe um array de pares [ [chave,
 // ? valor], ... ] e retorna o objeto equivalente.
 // ? ○ objetoParaPares(obj) faz o inverso, retornando um array de
 // ? pares.
+
+function paresParaObjeto(pares) {
+  const obj = {}
+  pares.forEach(([chave, valor]) => {
+    obj[chave] = valor
+  })
+  return obj
+}
+
+function objetoParaPares(obj) {
+  const pares = []
+  for (let key in obj) {
+    pares.push([key, obj[key]])
+  }
+  return pares
+}
+
+const pares = [["nome", "jacques"], ["idade", 24]]
+const obj = paresParaObjeto(pares)
+console.log(obj)
+
+const paresConvertidos = objetoParaPares(obj)
+console.log(paresConvertidos)
