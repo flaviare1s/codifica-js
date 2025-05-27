@@ -47,6 +47,30 @@ const prompt = require("prompt-sync")()
 // ? anteriores de fn (por argumentos), retornando resultados instantâneos em
 // ? repetidas invocações.
 
+// function memoize(fn) {
+//   const cache = new Map();
+
+//   return function (...args) {
+//     const key = JSON.stringify(args);
+
+//     if (cache.has(key)) {
+//       return cache.get(key);
+//     }
+
+//     const result = fn.apply(this, args);
+//     cache.set(key, result);
+
+//     return result;
+//   };
+// }
+
+// const fastFib = memoize(function fibonacci(n) {
+//   if (n < 2) return n;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// });
+
+// console.log(fastFib(10));
+
 // ! Seção 3: Arrays e Objetos Complexos
 // ? 7. Mapeamento e Ordenação
 // ? Dado um array produtos = [{ nome, preco }, ...], crie uma função que
