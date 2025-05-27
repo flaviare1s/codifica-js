@@ -152,6 +152,18 @@ const prompt = require("prompt-sync")()
 // ? retorne um novo array apenas com os nomes, ordenados por preço
 // ? crescente, usando map, sort.
 
+// const produtos = [
+//   { nome: 'Notebook', preco: 1000 },
+//   { nome: 'Smartphone', preco: 500 },
+//   { nome: 'Tablet', preco: 800 },
+// ]
+
+// function nomesOrdenadosPorPreco(arr) {
+//   return arr.slice().sort((a,b) => a.preco - b.preco).map(produto => produto.nome)
+// }
+
+// console.log(nomesOrdenadosPorPreco(produtos))
+
 // ? 8. Agrupamento por Propriedade
 // ? Em vendas = [{ cliente, total }, ...], use reduce para gerar um objeto onde
 // ? cada chave é um cliente e o valor é a soma de todos os seus total.
