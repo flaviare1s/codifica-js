@@ -19,3 +19,4 @@ Este repositório contém os exercícios, desafios e anotações do curso de des
 - Instale a extensão Code Runner no VS Code.
 - Abra o arquivo desejado.
 - Pressione o botão PLAY no canto superior direito do editor.
+- Caso o exercício esteja comentado, descomente antes de rodar.
